@@ -6,4 +6,4 @@
 
 # If you don't have a mysql instance launched 
 
-`docker run --name mysql-instance -e MYSQL_ROOT_PASSWORD=root -d -p 3306:3306 mysql:5.7`
+`docker run --name mysql-instance -v /my/own/datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -d -p 3306:3306 mysql:5.7`
